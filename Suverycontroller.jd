@@ -1,0 +1,18 @@
+const surveys = require("../models/Survey");
+
+// GET all surveys
+exports.getSurveys = (req, res) => {
+  res.json(surveys);
+};
+
+// CREATE survey
+exports.createSurvey = (req, res) => {
+  const newSurvey = {
+    id: Date.now(),
+    title: req.body.title,
+    questions: req.body.questions
+  };
+
+  surveys.push(newSurvey);
+  res.json(newSurvey);
+};
