@@ -1,0 +1,20 @@
+survey-platform/
+│
+├── client/
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── App.jsx
+│       └── main.jsx
+│
+├── Backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── server.js
+│
+├── .env
+├── package.json
+└── README.md
